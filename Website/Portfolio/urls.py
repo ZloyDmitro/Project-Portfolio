@@ -17,10 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Portfolio import views
+from .views import ContactView, contact_form, contact_success
 
 urlpatterns = [
-    path('', views.home, name="index"),
-    path('contact/', views.contact, name='contact'),
+    path('', views.home, name='index'),
+    path('contact/', contact_form, name='contact_form'),
+    path('contact_form/', contact_form, name='contact_form_endpoint'),
+    path('api/contact/', ContactView.as_view(), name='contact_api'),
     path('projects/', views.projects, name='projects'),
     path('resume/', views.resume, name='resume'),
 ]
+
+
+

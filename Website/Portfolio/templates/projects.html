@@ -22,7 +22,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Check my work out</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -47,10 +47,10 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                            <h2 class="fw-bolder">Project Portfolio</h2>
+                                            <p>Here, I showcase my skills and projects, establish a professional online presence, enhance networking, and provide an extended resume. You can also find my code on GitHub.</p>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                        <img class="img-fluid" src="/static/assets/code1.jpg" alt="code1" />
                                     </div>
                                 </div>
                             </div>
@@ -59,10 +59,10 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                            <h2 class="fw-bolder">DCI Final Project</h2>
+                                            <p>Here, you can find the code for my DCI final project. It is still in development...</p>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                        <img class="img-fluid" src="/static/assets/code2.jpg" alt="code2" />
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@
                 <div class="container px-5 my-5">
                     <div class="text-center">
                         <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact">Contact me</a>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href={% url 'contact_form' %}>Contact me</a>
                     </div>
                 </div>
             </section>
@@ -85,12 +85,12 @@
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">Copyright &copy; Daniel Ziebart 2024</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="index">Privacy</a>
+                    {% comment %} <div class="col-auto">
+                        <a class="small" href="{% url 'index' %}>Privacy</a>
                         <span class="mx-1">&middot;</span>
-                        <a class="small" href="index">Terms</a>
+                        <a class="small" href="{% url 'index' %}>Terms</a>
                         <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact">Contact</a>
+                        <a class="small" href={% url 'contact_form' %}>Contact</a> {% endcomment %}
                     </div>
                 </div>
             </div>

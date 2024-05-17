@@ -30,10 +30,6 @@ Thumbs.db
 *.tmp
 *.temp
 
-*.log
-*.tmp
-*.temp
-
 config.ini
 secrets.json
 
